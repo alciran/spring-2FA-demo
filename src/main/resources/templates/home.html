@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Page!</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <main>
+        <div class="home-page" th:if="${user}">
+            <div class="header">
+                <h1>Welcome to the Home Page!</h1>
+            </div>
+            <div class="banner">
+                <p>
+                    Hello <span class="username" th:text="${user.name}"></span>.
+                    Congratulations, you are logged in!
+                </p>
+                <a class="button" href="/logout"> Logout </a>
+            </div>
+        </div>
+
+        <div class="banner" th:unless="${user}">
+            <p>To access the Home Page you must be logged in!</p>
+            <div class="login-options">
+                <a class="button" href="/login"> Login </a>
+                <a class="button" href="/user/register"> Register </a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

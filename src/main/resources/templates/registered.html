@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registered!</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <h1>Success, you are now registered!</h1>
+        </div>
+        <div class="banner">
+            <div class="col">
+                <p>Hello <span class="username" th:text="${user.username}"></span>!</p>
+                <p>Please, scan this QR Code with your 2FA authentication app. After that, you can log in using the 2FA
+                    code.</p>
+                <p><img th:src="${QrCodeUrl}" /></p>
+                <div class="warning">
+                    <p><span class="error">WARNING: </span>Only exit this page if you have scanned the QR Code,
+                        otherwise it will not be possible to recover it.</p>
+                </div>
+                <div class="col">
+                    <p>Access the home page:</p>
+                    <a class="button btn-home-page" href="/login">Login</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
