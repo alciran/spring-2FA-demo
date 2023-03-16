@@ -32,7 +32,7 @@ You can inspect the database any time you need to at http://localhost:8080/h2-co
 ## How to proceed?
 
 - Register a new user at register page: [http://localhost:8080/register](http://localhost:8080/register)
-- After register, you will be redirected to a page with the QR Code. Scan this QR Code with your 2FA authentication app.
+- After registered, you will be redirected to a page with the QR Code. Scan this QR Code with your 2FA authentication app.
 - Then, you can access the home page through login page: [http://localhost:8080/login](http://localhost:8080/login) 
 
 ## Screenshots
