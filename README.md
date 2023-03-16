@@ -26,7 +26,15 @@ To run:
 
 Then open your browser at [http://localhost:8080](http://localhost:8080)
 
-The application used the [https://h2database.com/html/main.html](H2 Database), which is an in-memory datase. The database is recreated from scratch every time you start the app.
-You can inspect the database any time you need to at http://localhost:8080/h2-console. The credential os DB are [here](#).
+The application used the [H2 Database](https://h2database.com/html/main.html) which is an in-memory datase. The database is recreated from scratch every time you start the app. If you want to save/create data in database, you can use and see the SQL code in [this](https://github.com/alciran/spring-2FA-demo/blob/main/src/main/resources/data.sql) file.
+You can inspect the database any time you need to at http://localhost:8080/h2-console. The credential os DB are [here](https://github.com/alciran/spring-2FA-demo/blob/main/src/main/resources/application.properties#L3-L4).
 
+## How to proceed?
 
+- Register a new user at register page: [http://localhost:8080/register](http://localhost:8080/register)
+- After register, you will be redirected to a page with the QR Code. Scan this QR Code with your 2FA authentication app.
+- Then, you can access the home page through login page: [http://localhost:8080/login](http://localhost:8080/login) 
+
+## Screenshots
+
+You can see screenshots from this application at [screenshots page.](screenshots.md)
